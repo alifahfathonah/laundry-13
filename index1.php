@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset($_SESSION['id'])){
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,16 +33,14 @@
 </nav>
 
 <div class="container">
-    <div class="jumbotron text-center" style="padding:100px;">
-  <h1>SELAMAT DATANG DI ADMIN</h1>
-  <p>Silahkan pilih menu di bawah ini </p>
-  <a href="transaksi.php"><button type="button" class="btn btn-primary" href='tambahdatatransaksi.php'>Data Transaksi</button></a>
-  <a href="pakaian.php"><button type="button" class="btn btn-success">Data Pakaian</button></a>
-  <a href="pelanggan.php"><button type="button" class="btn btn-info">Data Pelanggan</button></a>
-  <a href="tambahdatatransaksi.php"><button type="button" class="btn btn-warning">Transaksi Laundry</button></a>
-
+    <div class="jumbotron text-center" style="padding:150px;">
+  <h1>SELAMAT DATANG ADMIN</h1>
   </div>
 </div>
 
 </body>
 </html>
+<?php
+}else{
+	header("location:login/index.php");
+}

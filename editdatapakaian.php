@@ -1,3 +1,8 @@
+<?php
+session_start();
+if(isset($_SESSION['id'])){
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -58,3 +63,7 @@
 
 </body>
 </html>
+<?php
+}else{
+	header("location:login/index.php");
+}

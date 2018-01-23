@@ -52,9 +52,6 @@
             <li class="nav-item nav-item-toggable">
               <a class="nav-link" href="login/index.php">Masuk</a>
             </li>
-            <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="#" target="_blank">Daftar</a>
-            </li>
             <li class="nav-item nav-item-toggable hidden-md-up">
               <form class="navbar-form">
                 <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">

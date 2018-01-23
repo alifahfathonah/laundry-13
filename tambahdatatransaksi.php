@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset($_SESSION['id'])){
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -113,7 +117,7 @@
                   <td><?php echo $hasil['Jenis_Pakaian']; ?></td>
                   <td><?php echo $hasil['Jumlah_pakaian']; ?></td>
                   <td style="text-align: center;">
-                    <button type="button" onclick="hapus('<?php echo $hasil['No_Order']; ?>,<?php echo $hasil['Id_Pakaian']; ?>')"  class="btn btn-danger"  >Hapus</button>
+                    <a href="proses-hapus-detail-transaksi.php?order=<?php echo $hasil['No_Order']; ?>&pakaian=<?php echo $hasil['Id_Pakaian']; ?>" class="btn btn-danger">Hapus</a></td>
               </tr>
               <?php
                   $i++;
@@ -241,3 +245,7 @@ function hapus(order,id){
 </script>
 </body>
 </html>
+<?php
+}else{
+	header("location:login/index.php");
+}

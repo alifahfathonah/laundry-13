@@ -10,6 +10,6 @@ if (isset($error)) {
   $query = "DELETE FROM detail_transaksi WHERE No_Order='".$No_Order."' AND Id_Pakaian='".$Id_Pakaian."'";
   $sql = mysqli_query($conn, $query); // Eksekusi/Jalankan query dari variabel $query
 ?>
-		<script type="text/javascript">setTimeout("location.href='tambahdatatransaksi.php';");</script>
+		<script type="text/javascript">setTimeout("location.href='editdatatransaksi.php?edit=<?php echo $No_Order ?>';");</script>
 <?php
 }
