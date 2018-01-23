@@ -30,7 +30,8 @@
     <a href="tambahdatapakaian.php"><button type="button" class="btn btn-success btn-md " >Tambah Data </button></a>
   </div>
   <br>
-  <table id="table" class="table table-striped table-bordered table-responsive" >
+<div class="table-responsive">
+  <table id="table" class="table table-striped table-bordered" >
     <thead>
       <tr>
         <th style="text-align: center;">No</th>
@@ -60,6 +61,7 @@
 
   </tbody>
   </table>
+  </div>
 <br>
 <br>
 <br>

@@ -25,7 +25,8 @@
   <h3>Data Transaksi</h3>
   <hr>
   <br>
-  <table id="table" class="table table-striped table-bordered table-responsive" >
+  <div class="table-responsive">
+  <table id="table" class="table table-striped table-bordered" >
     <thead>
       <tr>
         <th style="text-align: center;">No</th>
@@ -44,7 +45,7 @@
       <?php
         include "./include/koneksi.php";
         $i = 0 + 1;
-        $sql = mysqli_query($conn, "SELECT transaksi.*, pelanggan.Nama FROM transaksi join pelanggan where transaksi.No_Identitas = pelanggan.No_Identitas  ORDER BY `No_Identitas`");
+        $sql = mysqli_query($conn, "SELECT transaksi.*, pelanggan.Nama FROM transaksi join pelanggan where transaksi.No_Identitas = pelanggan.No_Identitas  ORDER BY `No_Order` DESC");
         while ($hasil = mysqli_fetch_array($sql)) {
      ?>
   <tr>
@@ -66,6 +67,7 @@
 
   </tbody>
   </table>
+</div>
   <br>
   <br>
 </div>
