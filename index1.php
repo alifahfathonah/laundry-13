@@ -22,17 +22,20 @@
         include "include/list.php"
       ?>
     </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+    </ul>
   </div>
 </nav>
 
 <div class="container">
-    <div class="jumbotron text-center" style="padding:100px;"> 
+    <div class="jumbotron text-center" style="padding:100px;">
   <h1>SELAMAT DATANG DI ADMIN</h1>
   <p>Silahkan pilih menu di bawah ini </p>
-  <button type="button" class="btn btn-primary" href='tambahdatatransaksi.php'>Data Transaksi</button>
-  <button type="button" class="btn btn-success">Data Pakaian</button>
-  <button type="button" class="btn btn-info">Data Pelanggan</button>
-  <button type="button" class="btn btn-warning">Transaksi Laundry</button>
+  <a href="transaksi.php"><button type="button" class="btn btn-primary" href='tambahdatatransaksi.php'>Data Transaksi</button></a>
+  <a href="pakaian.php"><button type="button" class="btn btn-success">Data Pakaian</button></a>
+  <a href="pelanggan.php"><button type="button" class="btn btn-info">Data Pelanggan</button></a>
+  <a href="tambahdatatransaksi.php"><button type="button" class="btn btn-warning">Transaksi Laundry</button></a>
 
   </div>
 </div>
