@@ -26,8 +26,15 @@
 </nav>
 
 <div class="container">
-  <h3>Right Aligned Navbar</h3>
-  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+    <div class="jumbotron text-center" style="padding:100px;"> 
+  <h1>SELAMAT DATANG DI ADMIN</h1>
+  <p>Silahkan pilih menu di bawah ini </p>
+  <button type="button" class="btn btn-primary" href='tambahdatatransaksi.php'>Data Transaksi</button>
+  <button type="button" class="btn btn-success">Data Pakaian</button>
+  <button type="button" class="btn btn-info">Data Pelanggan</button>
+  <button type="button" class="btn btn-warning">Transaksi Laundry</button>
+
+  </div>
 </div>
 
 </body>
