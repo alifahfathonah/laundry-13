@@ -24,6 +24,10 @@
         include "include/list.php"
       ?>
     </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -32,7 +36,7 @@
   <hr>
         <div class="row">
           <div class="col-md-4">
-            <form name="form" action="proses-tambah-transaksi.php" method="POST" >
+            <form name="form" action="proses-edit-transaksi.php" method="POST" >
             <?php
             include "./include/koneksi.php";
 

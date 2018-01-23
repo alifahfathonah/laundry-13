@@ -50,7 +50,7 @@
         <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
           <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="login/index.html">Masuk</a>
+              <a class="nav-link" href="login/index.php">Masuk</a>
             </li>
             <li class="nav-item nav-item-toggable">
               <a class="nav-link" href="#" target="_blank">Daftar</a>
@@ -71,7 +71,7 @@
                 </form>
               </div>
             </li>
-            
+
           </ul>
         </div>
         <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
@@ -112,9 +112,9 @@
       </div>
     </header>
 
-    
 
-    
+
+
 
     <!-- Footer
     ================================================== -->
@@ -129,7 +129,7 @@
               </div>
               <small class="media-body media-bottom">
                 &copy; Laundry 2018. <br>
-                Designed by SAN LAUNDRY 
+                Designed by SAN LAUNDRY
               </small>
             </div>
           </div>

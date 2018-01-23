@@ -19,6 +19,10 @@
         include "include/list.php"
       ?>
     </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+    </ul>
   </div>
 </nav>
 <div class="container">
@@ -57,7 +61,19 @@
       <td><?php echo $hasil['total_berat']; ?></td>
       <td><?php echo $hasil['diskon']; ?></td>
       <td><?php echo $hasil['Total_Bayar']; ?></td>
-      <td style="text-align: center;"><a href="detailtransaksi.php?detail=<?php echo $hasil['No_Order']; ?>" class="btn btn-info">Detail</a>  <a href="editdatatransaksi.php?edit=<?php echo $hasil['No_Order']; ?>" class="btn btn-warning">Edit</a>
+      <td style="text-align: center;">
+      <?php if ($hasil['Tgl_Ambil'] == ""){
+        ?>
+          <a href="proses-Konfirmasi.php?No_Order=<?php echo $hasil['No_Order']; ?>" class="btn btn-primary">Konfirmasi</a>
+      <?php
+    }else{
+        ?>
+      <a href="#" class="btn btn-primary">Konfirmasi</a>
+        <?php
+            }
+         ?>
+      <a href="download-laporan.php?cetak=<?php echo $hasil['No_Order']; ?>" class="btn btn-info">Cetak</a>
+      <a href="editdatatransaksi.php?edit=<?php echo $hasil['No_Order']; ?>" class="btn btn-warning">Edit</a>
       <a href="proses-hapus-transaksi.php?hapus=<?php echo $hasil['No_Order']; ?>" class="btn btn-danger">Hapus</a></td>
   </tr>
   <?php

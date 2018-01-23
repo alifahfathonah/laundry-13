@@ -16,12 +16,12 @@ if (trim($_POST['Jumlah_Pakaian']) == '') {
 if (isset($error)) {
 	echo '<b>Error</b>: <br />'.implode('<br />', $error);
 	?>
-	<script type="text/javascript">setTimeout("location.href='editdatatransaksi.php';",2000);</script>
+	<script type="text/javascript">setTimeout("location.href='editdatatransaksi.php?edit=<?php echo $No_Order ?>';",1000);</script>
 <?php } else {
 	$sql = "INSERT INTO `detail_transaksi` (`No_Order`, `Id_Pakaian`, `Jumlah_Pakaian`)
 			VALUES ('$No_Order', '$Id_Pakaian', '$Jumlah_Pakaian')";
 			$kueri = mysqli_query($conn, $sql);
 	echo '<b>Data Berhasil di simpan...</b><br/>';?>
-	<script type="text/javascript">setTimeout("location.href='editdatatransaksi.php';",2000);</script>
+	<script type="text/javascript">setTimeout("location.href='editdatatransaksi.php?edit=<?php echo $No_Order ?>';",1000);</script>
 	<?php
 }

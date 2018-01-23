@@ -20,7 +20,7 @@ if(empty($_POST["No_Order"]) || empty($_POST["No_Identitas"]) || empty($_POST["t
 			VALUES ('$No_Order', '$No_Identitas', '$Tgl_Terima', NULL, '$total_berat', '$diskon', '$total_bayar')";
 			$kueri = mysqli_query($conn, $sql);
 			echo "<script language='javascript'>alert('Berhasil di tambahkan');</script>";
-			echo '<meta http-equiv="refresh" content="0; url=transaksi.php">';
+			echo '<meta http-equiv="refresh" content="0; url=transaksi?>">';
 }
 
 ?>
